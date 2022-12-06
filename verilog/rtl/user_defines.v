@@ -21,6 +21,9 @@
 
 // deliberately erroneous placeholder value; user required to config GPIO's to other
 /* `define GPIO_MODE_INVALID                  13'hXXXX */
+/* STDOUT: {{GPIO-DEFINES: ERROR IN verilog/rtl/user_defines.v}} Directives(1)
+* still placeholder (13'hXXXX) or not hex-literal:
+  * USER_CONFIG_GPIO_18_INIT=13'hXXXX.. No report generated. */
 
 // Authoritive source of these MODE defs is: caravel/verilog/rtl/user_defines.v
 // Useful GPIO mode values.  These match the names used in defs.h.
@@ -77,6 +80,7 @@
 `define USER_CONFIG_GPIO_15_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
 `define USER_CONFIG_GPIO_16_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
 `define USER_CONFIG_GPIO_17_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
+`define USER_CONFIG_GPIO_18_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
 `define USER_CONFIG_GPIO_19_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
 `define USER_CONFIG_GPIO_20_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
 `define USER_CONFIG_GPIO_21_INIT `GPIO_MODE_USER_STD_INPUT_PULLDOWN
